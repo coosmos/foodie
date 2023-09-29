@@ -1,0 +1,242 @@
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    color: #00aa00;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+.header-icon{
+    margin-left:10px;
+}
+.header-icon img{
+    width:20px;
+    height: 20px;
+   
+}
+nav{
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+.contact-button {
+    background-color: #00aa00; /* Green background color */
+    color: #fff; /* White text color */
+    padding: 10px 20px;
+    border-radius: 5px; /* Add rounded corners */
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden; 
+}
+
+
+
+.contact-button:hover {
+    color: #fff; 
+}
+
+
+/* Basic styles for hero section */
+.hero {
+    display: flex;
+    align-items:center;
+    padding: 80px;
+    background-color: #fff;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+.p1{
+    margin-top: 20px;
+}
+.hero-image img{
+    width: 500px;
+    height: 500px;
+    margin-top: -40px;
+}
+
+.img-overlap img{
+    width:100px;
+    height: 100px;
+    margin-top: 100px;
+}
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    background-color: #00aa00;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5%;
+}
+.p1{
+     
+        font-family: Arial, Helvetica, sans-serif;
+      
+      
+}
+/* Basic styles for categories section */
+.categories {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.categories h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.categories h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgb(0, 215, 43);
+}
+
+.category {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+/* Style for the category box */
+.category-box {
+    width: 120px; 
+    height: 120px; 
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px; 
+    
+    background-color: #39ff16;
+    box-shadow: 0 4px 8px rgb(198, 180, 180);
+}
+.category-box img {
+    width: 100%; 
+    height: 100%;
+    object-fit: contain; /
+}
+
+.category img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 13px;
+    border: 2px solid #cfc0c0;
+    box-shadow: 1px  4px 4px 0px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 400ms;
+
+}
+.category img:hover{
+    filter:grayscale(1);
+    transform: scale(1.03);
+}
+
+.category p {
+    margin-top: 10px;
+}
+
+.browse-all-link {
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Basic styles for standout dishes section */
+.standout-dishes {
+    text-align: center;
+    padding: 80px 0;
+    background-color: #f2f2f2;
+}
+
+.standout-dishes h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Basic styles for footer (customize as needed) */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Media queries for responsiveness (add more as needed) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        margin-top: 20px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        margin-bottom: 20px;
+    }
+
+    .buttons a {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
